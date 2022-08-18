@@ -1,0 +1,16 @@
+.centered {
+    text-align: center;
+}
+
+.centered h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.centered p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 64px;
+}

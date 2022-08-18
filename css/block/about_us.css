@@ -1,0 +1,94 @@
+.about {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'find img_right' 'img_left work';
+}
+
+.about_find {
+    grid-area: find;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f2;
+}
+
+.about_text {
+    max-width: 440px;
+}
+
+.about_find h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+
+.about_find p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.about_img_right {
+    grid-area: img_right;
+}
+
+.about_work {
+    grid-area: work;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f2;
+}
+
+.about_work h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 45px;
+    margin-bottom: 26px;
+}
+
+.about_work p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.about_img_left {
+    grid-area: img_left;
+}
+
+@media (max-width: 1000px) {
+
+    .about {
+        grid-template-columns: 100%;
+        grid-template-areas: 'img_right' 'find' 'img_left' 'work'
+    }
+
+    .about_img_left, .about_img_right {
+        background: #f1f1f2;
+    }
+
+    .about_img_left img, .about_img_right img {
+        margin: 0 auto;
+    }
+
+    .about_work, .about_find {
+        padding: 32px 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .about_find h1 {
+        font-size: 2.5rem;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+}

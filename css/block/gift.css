@@ -1,0 +1,56 @@
+.gift_wrap {
+    padding: 95px 0;
+}
+
+.gift_reason {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.gift_items {
+    max-width: 270px;
+    background: #FAFAFA;
+    transition: 0.09s;
+}
+
+.gift_items:hover {
+    background: #fff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.02);
+    transform: scale(1.03);
+}
+
+.scale_right {
+    transition: 0.5s;
+    text-align: left;
+}
+
+.scale_right:hover {
+    transform: scale(1.15);
+}
+
+.gift_txt {
+    padding: 24px;
+}
+
+.gift_txt  h3{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 23px;
+    margin-bottom: 74px;
+}
+
+.gift_txt p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+@media (max-width: 1170px) {
+
+    .gift_reason {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
